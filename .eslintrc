@@ -1,0 +1,26 @@
+{
+  "extends": "erb",
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "configs/webpack.config.eslint.js"
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "useTabs": false,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    ],
+    "no-nested-ternary": "off",
+    "react/destructuring-assignment": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": "off"
+  }
+}
